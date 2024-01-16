@@ -55,7 +55,7 @@ Para que los distintos servicios interactuen entre ellos, antes hay que crear lo
 En AWS buscamos IAM y seguidamente pulsariamos en **roles**.
 Crearemos un rol nuevo.En la primera pestaña,en **Use case** seleccionamos el servicio Lambda.
 
-Seguidamenet en la siguiente pestaña, pondremos nombre que elijamos en el campo **Role name**. Luego elejiremos los siguientes permisos.
+Seguidamente en la siguiente pestaña, pondremos nombre que elijamos en el campo **Role name**. Luego elejiremos los siguientes permisos.
 
 Y dariamos a **Create Role**.
 
