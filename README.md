@@ -71,9 +71,6 @@ Buscaremos S3 y seguidamente pulsaremos en **Create a bucket**.
 En al siguiente ventana le pondremos un nombre que tiene que ser unico, el resto de opciones las dejaremos como vienen por defecto.
 
 
-![Alt text](img\image-6.png)
-
-
 ## Creacion de una DynamoDB
 ***
 
@@ -81,7 +78,6 @@ Aqui crearemos una BBDD NoSQL, nos iremos al buscador y la buscaremos.
 Pulsaremos en **Create Table**. Le podremos el nombre que elijamos y la opcion *Partition key* pondremos ID, ya que sera el valor unico que tendra cada registro que iremos añadiendo.
 Lo pondremos de tipo *Number*.
 
-![Alt text](img\image-7.png)
 
 ## Creacion de Lambda
 ***
@@ -90,8 +86,6 @@ Con todos los serivicios anteriores creados, crearemos una funcion para que inte
 Buscaremos lambda y le daremos a **Create function**.
 En *Function name* le pondremos el nombre que elijamos, en *Runetime* elejiremos Python 3.11 y en *Execution role* elejiremos el rol que hemos creado antes.
 
-
-![Alt text](img\image-8.png)
 
 Una vez creada con los parametros antes indicados, entramos en ella y nos situamos en la pestaña **Code**
 Aqui introduciremos los siguientes comandos de python.
@@ -169,8 +163,6 @@ Como no tienen mucho conocimiento en programación web, el cliente ha concedido 
 1.7.- Una vez la instancia esta en ejecución, tal y como se muestra en la imagen, puedes acceder a ella mediante SSH.
 
   
-![img.png](img\img.png)
- 
 ## Web DataBase
 **1.-Importar las bibliotecas:**
 ````python
@@ -257,9 +249,6 @@ if __name__ == '__main__':
 
 3.4.- La web con el DataBase debería estar correctamente levantado.
 
-![img_2.png](img\web-tabla.png)
-
-
 
 ># Ejercicio 3
 >Una vez que tengan realizados los ejercicios anteriores, se plantean la realización de un formulario web para no tener que 
@@ -310,15 +299,8 @@ botocore.exceptions.NoRegionError: You must specify a region__-
   _ClientError: An error occurred (AccessDeniedException) when calling the PutItem operation: User: arn:aws:sts::478285378123:assumed-role/lector_json-role-xd85debz/lector_json is not authorized to perform: dynamodb:PutItem on resource: arn:aws:dynamodb:eu-west-3:478285378123:table/ejercicios_general1 because no identity-based policy allows the dynamodb:PutItem action
 Traceback (most recent call last):_
 
-  ![prueba](img\role_ec2.png)
-
 
 Con esos ajustes el formulario nos funcino perfectamente:
-
-
-![formulario](img\formulario.png) 
-
-
 
 
 ## Web formulario y Database
@@ -352,15 +334,6 @@ Luego, consideramos la opción de combinar el formulario y la tabla en una sola 
     >    else:
     >        return 'Aún no se ha hecho clic en el botón "Enviar"'
     > ```
-
-### Pagina del formulario de la app
-![formulario](img\app_menu_formulario.png) 
-
-
-
-
-### Pagina de la tabla de la app
-![tabla](img\app_menu_tabla.png) 
 
 
 Proporciono codigo completo:
